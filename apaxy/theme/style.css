@@ -48,6 +48,10 @@ a:hover {
 	padding-top:20px;
 	max-width:980px;
 	background-color: white;
+	border: 1px solid #4F92DB;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 /*------------------------------------*\
     Demo block
@@ -125,4 +129,25 @@ tr.parent a {
 
 .block{
 	text-align: center;
+}
+
+.header div.left{
+	float: left;
+}
+
+.sigle {
+	border-left: solid 1px maroon;
+	margin-left: 10px;
+}
+
+.sigle p{
+	color: maroon;
+	margin-top: 59px;
+	padding-left: 5px;
+	font-family: DroidSerif;
+	font-style: italic;
+}
+
+.header div.both{
+	clear: both;
 }
