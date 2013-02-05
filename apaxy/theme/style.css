@@ -28,6 +28,7 @@ html {
 body {
 	padding:20px;
 	-webkit-backface-visibility:hidden;
+	background-image: url('images/bg.fw.png');
 }
 code {
 	font-family:consolas,monospace;	
@@ -45,7 +46,8 @@ a:hover {
 .wrapper {
 	margin:0 auto;
 	padding-top:20px;
-	max-width:500px;
+	max-width:980px;
+	background-color: white;
 }
 /*------------------------------------*\
     Demo block
@@ -119,4 +121,8 @@ tr.parent a {
 .footer {
 	text-align:center;
 	font-size:.75em;
+}
+
+.block{
+	text-align: center;
 }
