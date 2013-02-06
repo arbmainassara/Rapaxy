@@ -15,6 +15,8 @@ AddDefaultCharset UTF-8
 	# HIDE /theme DIRECTORY
 	IndexIgnore .htaccess /theme ..
 
+ErrorDocument 404 /404.html
+
 #
 # GENERAL ICONS (BLANK, DIRECTORY, PARENT DIRECTORY)
 #
