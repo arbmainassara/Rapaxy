@@ -4,6 +4,7 @@
 # For a full breakdown of the mod_autoindex module:
 # http://apache.org/docs/2.2/mod/mod_autoindex.html
 #
+AddDefaultCharset UTF-8
 
 	# ENABLE INDEXING
 	Options +Indexes
@@ -12,7 +13,7 @@
 	IndexOptions +FancyIndexing +IgnoreCase +FoldersFirst +XHTML +HTMLTable +SuppressRules +SuppressDescription
 
 	# HIDE /theme DIRECTORY
-	IndexIgnore .htaccess /theme
+	IndexIgnore .htaccess /theme ..
 
 #
 # GENERAL ICONS (BLANK, DIRECTORY, PARENT DIRECTORY)
