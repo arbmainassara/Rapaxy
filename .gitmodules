@@ -1,0 +1,3 @@
+[submodule "apaxy/lecteuraudio"]
+	path = apaxy/lecteuraudio
+	url = git@github.com:arbmainassara/audioJS.git
