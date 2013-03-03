@@ -5,7 +5,8 @@
 # http://apache.org/docs/2.2/mod/mod_autoindex.html
 #
 AddDefaultCharset UTF-8
-
+AddType text/html .php 
+AddHandler application/x-httpd-php .php
 	# ENABLE INDEXING
 	Options +Indexes
 
@@ -13,7 +14,7 @@ AddDefaultCharset UTF-8
 	IndexOptions +FancyIndexing +IgnoreCase +FoldersFirst +XHTML +HTMLTable +SuppressRules +SuppressDescription
 
 	# HIDE /theme DIRECTORY
-	IndexIgnore .htaccess /theme 
+	IndexIgnore .htaccess /theme footer.md header.md
 
 ErrorDocument 404 /404.html
 
@@ -73,6 +74,6 @@ ErrorDocument 404 /404.html
 # THEME FILES
 #
 
-	HeaderName /theme/header.html
-	ReadmeName /theme/footer.html
+	HeaderName /theme/header.php
+	ReadmeName /theme/footer.php
 	IndexStyleSheet "/theme/style.css"

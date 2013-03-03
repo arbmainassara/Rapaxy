@@ -9,7 +9,6 @@
 /* Have to use @import for the font, as you can only specify a single stylesheet */
 * {
 	margin:0;
-	padding:0;
 	-webkit-box-sizing:border-box;
 	   -moz-box-sizing:border-box;
 	       box-sizing: border-box; 
@@ -22,7 +21,7 @@ html {
 	color:#61666c;
 	font-weight:400;
 	font-size:1em;
-	font-family:'Open Sans', sans-serif;
+	font-family:'Droid Serif', sans-serif;
 	line-height:2em;
 }
 body {
@@ -128,11 +127,11 @@ tr.parent a {
 }
 
 .block{
-	text-align: center;
 }
 
 .header div.left{
 	float: left;
+	margin-bottom: 25px;
 }
 
 .sigle {
@@ -150,4 +149,25 @@ tr.parent a {
 
 .header div.both{
 	clear: both;
+}
+
+.center{
+	text-align: center;
+}
+
+.left{
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+}
+h1,h2,h3,h4,h5,h6{
+	text-align: center;
+}
+p{
+	line-height: 12pt;
+font-size: 12pt;
+padding: 5px 20px;
+text-align: justify;
 }
