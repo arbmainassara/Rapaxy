@@ -6,7 +6,7 @@
 		$file = urldecode('..'.$_SERVER["REQUEST_URI"]."footer.md");
 		if(file_exists($file)){
 			$my_html = Markdown::defaultTransform(file_get_contents($file, FILE_USE_INCLUDE_PATH));
-			echo $my_html;
+			echo iconv('ASCII', 'UTF-8//TRANSLIT', $my_html);
 		}
 			
 		?>
