@@ -2,11 +2,13 @@
 		
 	<?php
 	    include_once "phpmarkdown/Michelf/Markdown.php";
+	     include_once "ForceUTF8/Encoding.php";
 	    use \Michelf\Markdown;
+	    use \ForceUTF8\Encoding;
 		$file = urldecode('..'.$_SERVER["REQUEST_URI"]."footer.md");
 		if(file_exists($file)){
-			$my_html = Markdown::defaultTransform(file_get_contents($file, FILE_USE_INCLUDE_PATH));
-			echo iconv('ASCII', 'UTF-8//TRANSLIT', $my_html);
+			$file_content = Encoding::toUTF8(file_get_contents($file, FILE_USE_INCLUDE_PATH));
+			echo Markdown::defaultTransform($file_content);
 		}
 			
 		?>
